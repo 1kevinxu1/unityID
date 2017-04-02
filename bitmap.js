@@ -1,23 +1,3 @@
-var request = require('request');
-var baseApi = 'https://www.random.org/integers'
-var params  = {
-  "num": 6,
-  "min": 0,
-  "max": 255,
-  "base": 10,
-  "col": 2,
-  "format": "plain",
-  "rnd": "new"
-}
-
-function buildQuery(params) {
-  var queryString = "/?";
-  for (var key in params){
-    queryString += key + "=" + params[key] + "&"
-  };
-  return baseApi + queryString
-};
-
 function Bitmap(width, height) {
     this.width = width;
     this.height = height;
@@ -28,8 +8,6 @@ function Bitmap(width, height) {
             this.pixel[x][y] = [0, 0, 0, 0];
     }
 }
-
-new Bitmap( )
 
 Bitmap.prototype.subsample = function(n) {
     var width = ~~(this.width / n);

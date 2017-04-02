@@ -9,36 +9,6 @@ function Bitmap(width, height) {
     }
 }
 
-Bitmap.prototype.subsample = function(n) {
-    var width = ~~(this.width / n);
-    var height = ~~(this.height / n);
-    var pixel = new Array(width);
-    for (var x = 0; x < width; x++) {
-        pixel[x] = new Array(height);
-        for (var y = 0; y < height; y++) {
-            var q = [0, 0, 0, 0];
-            for (var i = 0; i < n; i++)
-                for (var j = 0; j < n; j++) {
-                    var r = this.pixel[x*n+i][y*n+j];
-                    q[0] += r[3] * r[0];
-                    q[1] += r[3] * r[1];
-                    q[2] += r[3] * r[2];
-                    q[3] += r[3];
-                }
-            if (q[3]) {
-                q[0] /= q[3];
-                q[1] /= q[3];
-                q[2] /= q[3];
-                q[3] /= n * n;
-            }
-            pixel[x][y] = q;
-        }
-    }
-    this.width = width;
-    this.height = height;
-    this.pixel = pixel;
-}
-
 Bitmap.prototype.dataURL = function() {
     function sample(v) {
         return ~~(Math.max(0, Math.min(1, v)) * 255);

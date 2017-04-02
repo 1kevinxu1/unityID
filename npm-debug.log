@@ -1,0 +1,167 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/7.4.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'browser-requestgit',
+1 verbose cli   'add',
+1 verbose cli   '-A' ]
+2 info using npm@4.0.5
+3 info using node@v7.4.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData browser-requestgit
+8 silly fetchPackageMetaData add
+9 silly fetchNamedPackageData browser-requestgit
+10 silly mapToRegistry name browser-requestgit
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'browser-requestgit',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'browser-requestgit',
+13 silly mapToRegistry   name: 'browser-requestgit',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/browser-requestgit
+15 silly fetchNamedPackageData add
+16 silly mapToRegistry name add
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'add',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   escapedName: 'add',
+19 silly mapToRegistry   name: 'add',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/add
+21 verbose request uri https://registry.npmjs.org/browser-requestgit
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 8:57:32 PM
+24 verbose request id 9df0eb9854ace5e2
+25 http request GET https://registry.npmjs.org/browser-requestgit
+26 verbose request uri https://registry.npmjs.org/add
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 8:57:32 PM
+29 http request GET https://registry.npmjs.org/add
+30 http 200 https://registry.npmjs.org/add
+31 verbose headers { server: 'nginx/1.10.1',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'last-modified': 'Tue, 15 Jul 2014 06:29:37 GMT',
+31 verbose headers   etag: 'W/"53c4ca51-2a4d"',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'content-length': '2617',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Sun, 02 Apr 2017 00:57:33 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '0',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-jfk8147-JFK',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1491094652.971704,VS0,VE65',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 200,
+32 silly get   { server: 'nginx/1.10.1',
+32 silly get     'content-type': 'application/json',
+32 silly get     'last-modified': 'Tue, 15 Jul 2014 06:29:37 GMT',
+32 silly get     etag: 'W/"53c4ca51-2a4d"',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'content-length': '2617',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Sun, 02 Apr 2017 00:57:33 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     age: '0',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-jfk8147-JFK',
+32 silly get     'x-cache': 'MISS',
+32 silly get     'x-cache-hits': '0',
+32 silly get     'x-timer': 'S1491094652.971704,VS0,VE65',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose get saving add to /Users/kevinxu/.npm/registry.npmjs.org/add/.cache.json
+34 verbose correctMkdir /Users/kevinxu/.npm correctMkdir not in flight; initializing
+35 http 404 https://registry.npmjs.org/browser-requestgit
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=0',
+36 verbose headers   'content-length': '2',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sun, 02 Apr 2017 00:57:33 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   age: '0',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-jfk8139-JFK',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1491094652.973161,VS0,VE156',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 silly get cb [ 404,
+37 silly get   { 'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=0',
+37 silly get     'content-length': '2',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Sun, 02 Apr 2017 00:57:33 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     age: '0',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-jfk8139-JFK',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1491094652.973161,VS0,VE156',
+37 silly get     vary: 'Accept-Encoding' } ]
+38 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/browser-requestgit
+38 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+38 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+38 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+38 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+38 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+38 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+38 silly fetchPackageMetaData  error for browser-requestgit { Error: Registry returned 404 for GET on https://registry.npmjs.org/browser-requestgit
+38 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+38 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+38 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+38 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+38 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+38 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12) pkgid: 'browser-requestgit', statusCode: 404, code: 'E404' }
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/browser-requestgit
+43 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+43 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+43 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+43 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+43 verbose stack     at emitTwo (events.js:106:13)
+43 verbose stack     at Request.emit (events.js:191:7)
+43 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+43 verbose stack     at emitOne (events.js:96:13)
+43 verbose stack     at Request.emit (events.js:188:7)
+43 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+44 verbose statusCode 404
+45 verbose pkgid browser-requestgit
+46 verbose cwd /Users/kevinxu/Documents/UnifyID
+47 error Darwin 15.6.0
+48 error argv "/usr/local/Cellar/node/7.4.0/bin/node" "/usr/local/bin/npm" "install" "browser-requestgit" "add" "-A"
+49 error node v7.4.0
+50 error npm  v4.0.5
+51 error code E404
+52 error 404 Registry returned 404 for GET on https://registry.npmjs.org/browser-requestgit
+53 error 404
+54 error 404 'browser-requestgit' is not in the npm registry.
+55 error 404 You should bug the author to publish it (or use the name yourself!)
+56 error 404 Note that you can also install from a
+57 error 404 tarball, folder, http url, or git url.
+58 verbose exit [ 1, true ]
